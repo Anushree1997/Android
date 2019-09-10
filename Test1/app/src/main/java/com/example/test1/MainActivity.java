@@ -12,27 +12,27 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button submitButton ;
+   // Button submitButton ;
     EditText editText1;
     TextView textView1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        submitButton = (Button) findViewById(R.id.button1);
+       // submitButton = (Button) findViewById(R.id.button1);
         editText1 = (EditText) findViewById(R.id.editText1);
         textView1 = (TextView) findViewById(R.id.textView1);
-        submitButton.setOnClickListener(new View.OnClickListener() {
+      /* submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
              /*   Toast buttontoast = Toast.makeText(getApplicationContext(),
                         "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         Toast.LENGTH_SHORT);
-                buttontoast.show(); */
+                buttontoast.show();
              textView1.setText(editText1.getText().toString());
             }
-        });
+        }); */
     }
 
 }
