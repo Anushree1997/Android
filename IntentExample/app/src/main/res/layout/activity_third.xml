@@ -4,35 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".thirdActivity"
+    android:orientation="vertical">
 
     <EditText
-        android:id="@+id/edt_txt1"
+        android:id="@+id/edt_txt2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@android:color/holo_blue_light"
         android:layout_marginTop="50dp"
-        android:textAlignment="textEnd"
-        android:layout_gravity="end"/>
+        android:background="#FF8C00"
+        android:inputType="number"/>
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
-        android:background="@android:color/holo_blue_bright"
-        android:text="Go To Second Screen "
+        android:background="#FFD700"
+        android:text="Go To Number Keypad"
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/btn6"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Go To Third Screen"
+        android:background="#FFA500"
+        android:text="Go To First Screen"
         android:textSize="20sp"/>
-
 
 </LinearLayout>

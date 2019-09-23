@@ -4,35 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".secondActivity"
+    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edt_txt1"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_blue_light"
-        android:layout_marginTop="50dp"
-        android:textAlignment="textEnd"
-        android:layout_gravity="end"/>
-
-    <Button
-        android:id="@+id/btn1"
+    <TextView
+        android:id="@+id/txtvw1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
-        android:background="@android:color/holo_blue_bright"
-        android:text="Go To Second Screen "
-        android:textSize="20sp"/>
+        android:background="@android:color/holo_green_dark"
+        />
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_green_light"
+        android:text="Go To First Screen"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#008000"
         android:text="Go To Third Screen"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
 
 </LinearLayout>
