@@ -16,8 +16,7 @@ import android.widget.EditText;
 public class thirdActivity extends AppCompatActivity {
 
     EditText edt_txt2;
-    Button btn5,btn6;
-
+    Button btn5, btn6;
 
 
     @Override
@@ -31,9 +30,22 @@ public class thirdActivity extends AppCompatActivity {
             @RequiresApi(api=Build.VERSION_CODES.M)
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:"+edt_txt2.getText().toString()));
-                startActivity(intent);
+
+                if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    Activity#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for Activity#requestPermissions for more details.
+                    Intent intent=new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:" + edt_txt2.getText().toString()));
+                    startActivity(intent);
+
+                    return;
+                }
+
 
 
 
