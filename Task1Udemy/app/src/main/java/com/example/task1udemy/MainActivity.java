@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     public void clickFunction(View view){
-        Log.i("Info" , "Button Pressed");
+
+        EditText myTextField;
+        myTextField = (EditText) findViewById(R.id.myTextField);
+        Log.i("Info" , myTextField.getText().toString());
     }
 
     @Override
