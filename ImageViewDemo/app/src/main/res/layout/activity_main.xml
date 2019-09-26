@@ -11,7 +11,10 @@
         android:id="@+id/img_vw"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/cat1" />
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cat" />
 
     <Button
         android:id="@+id/btn1"

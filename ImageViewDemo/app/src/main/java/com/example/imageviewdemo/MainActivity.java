@@ -11,11 +11,21 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView img_vw;
     Button btn1;
+    int imgNumber = 0;
 
     public void changePicture(View v){
         img_vw = (ImageView) findViewById(R.id.img_vw);
-        img_vw.setImageResource(R.drawable.cat);
-    }
+
+
+        if (imgNumber == 0){
+           img_vw.setImageResource(R.drawable.cat1);
+            imgNumber = 1;
+       }else{
+           img_vw.setImageResource(R.drawable.cat);
+            imgNumber = 0;
+       }
+
+        }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
