@@ -3,6 +3,7 @@ package com.example.higherorlower;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         if(guessInt > RandomNumber)
         {
-            makeToast("Lower");
+            makeToast("Higher");
         }
         else if (guessInt < RandomNumber)
         {
-            makeToast("Higher");
+            makeToast("Lower");
         }
         else
         {
@@ -55,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
         Random rand= new Random();
         RandomNumber = rand.nextInt(20)+1;
-
-
+        String number = Integer.toString(RandomNumber);
+        Log.i("Random Number Is:" , number);
 
     }
 }
